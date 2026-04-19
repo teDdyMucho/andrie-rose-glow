@@ -29,19 +29,63 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Andrie Lowrence Rodriguez | Customer Service & Technical Support Specialist" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Andrie Lowrence Rodriguez — 5+ years in customer service, technical support, and digital marketing. Based in Angeles City, Pampanga.",
+      },
+      { name: "author", content: "Andrie Lowrence Rodriguez" },
+      { property: "og:title", content: "Andrie Lowrence Rodriguez | Customer Service & Technical Support Specialist" },
+      {
+        property: "og:description",
+        content:
+          "Portfolio of Andrie Lowrence Rodriguez — 5+ years in customer service, technical support, and digital marketing.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Andrie Lowrence Rodriguez | Portfolio" },
+      {
+        name: "twitter:description",
+        content: "Customer Service & Technical Support Specialist based in Angeles City, Pampanga.",
+      },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap",
+      },
+      { rel: "stylesheet", href: appCss },
+      { rel: "canonical", href: "https://andrierodriguez.com/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Andrie Lowrence Rodriguez",
+          jobTitle: "Customer Service & Technical Support Specialist",
+          telephone: "+639615721291",
+          email: "dreirodriguez0824@gmail.com",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "3797 4th Street Balibago",
+            addressLocality: "Angeles City",
+            addressRegion: "Pampanga",
+            addressCountry: "PH",
+          },
+          knowsAbout: [
+            "Customer Service",
+            "Technical Support",
+            "Digital Marketing",
+            "Negotiation",
+            "Leadership",
+            "GoHighLevel",
+          ],
+        }),
       },
     ],
   }),
