@@ -44,11 +44,16 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Andrie Lowrence Rodriguez | Portfolio" },
+      { name: "twitter:title", content: "Andrie Lowrence Rodriguez | Customer Service & Technical Support Specialist" },
       {
         name: "twitter:description",
         content: "Customer Service & Technical Support Specialist based in Angeles City, Pampanga.",
       },
+      { name: "description", content: "Andrie's Pink Portfolio is a personal website showcasing a Customer Service & Technical Support professional." },
+      { property: "og:description", content: "Andrie's Pink Portfolio is a personal website showcasing a Customer Service & Technical Support professional." },
+      { name: "twitter:description", content: "Andrie's Pink Portfolio is a personal website showcasing a Customer Service & Technical Support professional." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/185838c3-ec98-478e-a690-2af5dc9b9109/id-preview-e26d1b99--820f462c-e60b-45e1-9e5a-1af0fb487c84.lovable.app-1776620981949.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/185838c3-ec98-478e-a690-2af5dc9b9109/id-preview-e26d1b99--820f462c-e60b-45e1-9e5a-1af0fb487c84.lovable.app-1776620981949.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
